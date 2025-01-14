@@ -1,0 +1,61 @@
+/* Estilos para a barra de navegação */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+    color: white;
+    position: fixed; /* Fixa a NavBar no topo */
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+  }
+  
+  /* Ajustar o contêiner da parte central da NavBar */
+  .navbar-center {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1; /* Permite que a área central ocupe todo o espaço disponível */
+  }
+  
+  .navbar-left {
+    display: flex;
+    justify-content: flex-start; /* Alinha os itens à esquerda */
+  }
+  
+  .navbar-item {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 16px;
+    margin: 0 15px; /* Espaço entre os itens */
+    cursor: pointer;
+  }
+  
+  .navbar-item:hover {
+    text-decoration: underline;
+  }
+  
+  .navbar-right {
+    display: flex;
+    justify-content: flex-end; /* Alinha o ícone de perfil à direita */
+  }
+  
+  .navbar-right .profile-icon {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: white;
+  }
+  
+  .navbar-right .profile-icon:hover {
+    color: #ccc;
+  }
+  
+  /* Espaçamento adicional para o conteúdo da página (evitar que o conteúdo fique atrás da NavBar) */
+  body {
+    margin-top: 60px; /* Ajuste conforme a altura da NavBar */
+  }
+  
